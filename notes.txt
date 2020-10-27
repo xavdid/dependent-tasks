@@ -1,0 +1,86 @@
+relicanth + wailord
+  /\
+Open Chambers
+  /\
+Ice | Steel | Rock
+  /\
+Gigas
+
+------
+
+Explore Sea Mauville
+  /\
+Trade in Slateport
+  /\
+Catch Lugia
+  /\
+Entei | Raiku | Suicune
+
+------
+
+Uxie | Mesprit | Azelf
+  /\
+Catch Palkia | Trade Dialga
+  /\
+Giratina
+
+------
+
+   A
+  / \
+   B
+  / \
+   C
+  / \
+   D
+  / \
+   A
+
+------
+
+   A
+  / \
+   B
+  / \
+   A
+
+------
+
+   A
+  /  \
+B | C | D
+  / \
+   E
+
+------
+
+
+
+// asking: can A be listed as a blocker for C?
+// recurse through A's blocker tree to see if we find C
+// C already blocks A, so A cannot block C
+// calling with (A, C)
+{
+  "1": {
+    "title": "A",
+    "id": "1",
+    "blockedBy": [
+      "2"
+    ],
+    "completed": false
+  },
+  "2": {
+    "title": "B",
+    "id": "2",
+    "blockedBy": [
+      "3"
+    ],
+    "completed": false
+  },
+  "3": {
+    "title": "C",
+    "id": "3",
+    "blockedBy": [],
+    "completed": false
+  }
+}
