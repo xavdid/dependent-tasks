@@ -56,3 +56,5 @@ db.completeTask(a.id)
 db.availableTasks()
 // [ Task { title: 'B', id: 2, blockedBy: [ 1 ], completed: false } ]
 ```
+
+For more complex examples, see [the tests](https://github.com/xavdid/dependent-tasks/blob/main/src/__tests__/index.test.ts).
